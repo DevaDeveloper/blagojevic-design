@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+main {
+  margin-bottom: 300px;
+}
+
+.landing-page-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 80px 0;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  article {
+    flex: 0 0 44%;
+  }
+
+  .text-header-article {
+    margin-top: -300px;
+    @media (max-width: 1200px) {
+      margin-top: 0;
+      width: 90%;
+      // display: flex;
+      // justify-content: center;
+      // flex-direction: column;
+      // align-items: center;
+    }
+    h1 {
+      @media (max-width: 600px) {
+        width: 95%;
+        font-size: 40px;
+      }
+    }
+    h4 {
+      color: #00b5ce;
+    }
+    .description-text {
+      margin: 15px 0;
+      font-weight: 300;
+      font-size: 16px;
+
+      @media (max-width: 600px) {
+        width: 95%;
+      }
+    }
+    .email-info {
+      margin: 15px 0;
+    }
+    .contact-data {
+      opacity: 0.6;
+    }
+  }
+}
+
+article {
+  flex: 0 0 47%;
+  h4 {
+    margin: 15px 0;
+  }
+}
+
+.main-header-holder {
+  color: #00b5ce;
+  display: flex;
+  h2 {
+    margin-left: 78px;
+    @media (max-width: 600px) {
+      margin-left: 20px;
+    }
+  }
+}
+
+.main-content-holder {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.portfolio-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 47%;
+  margin: 20px 0;
+  .links {
+    display: flex;
+  }
+  p {
+    margin: 10px 0;
+  }
+  a {
+    margin: 10px 0;
+  }
+}
+
+img {
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+}
